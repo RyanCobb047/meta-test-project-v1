@@ -1,24 +1,88 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Meta Test Project v1 (Loose Inspo)</title><style>body{font-family:Inter,system-ui,sans-serif;background:#0b1220;color:#eef2ff;margin:0;padding:24px}h1{margin:0 0 8px}p.lead{color:#b7c3d9;max-width:900px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:24px}.card{background:#131c30;border:1px solid #24314f;border-radius:16px;overflow:hidden}.visual{position:relative;background:#0f172a}.card img{display:block;width:100%;height:auto;background:#0f172a}.card .pad{padding:14px}.k{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#7dd3fc}.card h2{font-size:18px;margin:6px 0 10px}.card p{font-size:14px;line-height:1.5;color:#d7def0;white-space:pre-line}</style></head><body><h1>Meta Test Project v1 (Loose Inspo)</h1><p class="lead">Second-pass Futures Funding creative concepts. Loose logo inspiration.</p><div class="grid">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meta Ad Run</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .card img { max-width: 100%; height: auto; border-radius: 4px; }
+        .card p { margin-top: 10px; font-size: 0.9em; color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Meta Ad Run</h1>
+    <div class="grid">
+        <div class="card">
+            <img src="concept-01-bait-and-switch.png" alt="concept-01">
+            <p id="caption-01">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-02-fast-draws.png" alt="concept-02">
+            <p id="caption-02">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-03-ghosted-chat.png" alt="concept-03">
+            <p id="caption-03">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-04-local-blueprint.png" alt="concept-04">
+            <p id="caption-04">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-05-junk-fee-jenga.png" alt="concept-05">
+            <p id="caption-05">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-06-tech-bro-vs-partner.png" alt="concept-06">
+            <p id="caption-06">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-07-marathon-not-sprint.png" alt="concept-07">
+            <p id="caption-07">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-08-shredder.png" alt="concept-08">
+            <p id="caption-08">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-09-rolodex-of-reality.png" alt="concept-09">
+            <p id="caption-09">Loading...</p>
+        </div>
+        <div class="card">
+            <img src="concept-10-tailored-suit.png" alt="concept-10">
+            <p id="caption-10">Loading...</p>
+        </div>
+    </div>
 
-<section class="card">
-<div class="visual"><img src="concept1-ghosted-draw.png" alt="Concept 1"></div>
-<div class="pad"><div class="k">Concept 1: The Ghosted Draw</div><p id="cap1"></p></div>
-</section>
+    <script>
+        const captions = {
+            "caption-01": "concept-01-bait-and-switch.txt",
+            "caption-02": "concept-02-fast-draws.txt",
+            "caption-03": "concept-03-ghosted-chat.txt",
+            "caption-04": "concept-04-local-blueprint.txt",
+            "caption-05": "concept-05-junk-fee-jenga.txt",
+            "caption-06": "concept-06-tech-bro-vs-partner.txt",
+            "caption-07": "concept-07-marathon-not-sprint.txt",
+            "caption-08": "concept-08-shredder.txt",
+            "caption-09": "concept-09-rolodex-of-reality.txt",
+            "caption-10": "concept-10-tailored-suit.txt"
+        };
 
-<section class="card">
-<div class="visual"><img src="concept2-reality-check.png" alt="Concept 2"></div>
-<div class="pad"><div class="k">Concept 2: Reality Check</div><p id="cap2"></p></div>
-</section>
-
-<section class="card">
-<div class="visual"><img src="concept3-anticorporate-jobsite.png" alt="Concept 3"></div>
-<div class="pad"><div class="k">Concept 3: Anti-Corporate</div><p id="cap3"></p></div>
-</section>
-
-</div>
-<script>
-  fetch('concept1-caption.txt').then(r=>r.text()).then(t=>document.getElementById('cap1').innerText=t);
-  fetch('concept2-caption.txt').then(r=>r.text()).then(t=>document.getElementById('cap2').innerText=t);
-  fetch('concept3-caption.txt').then(r=>r.text()).then(t=>document.getElementById('cap3').innerText=t);
-</script>
-</body></html>
+        async function loadCaptions() {
+            for (const [id, url] of Object.entries(captions)) {
+                try {
+                    const response = await fetch(url);
+                    const text = await response.text();
+                    document.getElementById(id).innerText = text;
+                } catch (e) {
+                    console.error("Failed to load " + url, e);
+                }
+            }
+        }
+        loadCaptions();
+    </script>
+</body>
+</html>
