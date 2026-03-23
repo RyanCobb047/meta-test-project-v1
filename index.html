@@ -1,103 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta Ad Run</title>
-    <style>
-        body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; }
-        .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .card img { max-width: 100%; height: auto; border-radius: 4px; }
-        .card p { margin-top: 10px; font-size: 0.9em; color: #333; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meta Ad Run — 5 Concept Test</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --ink:#e5e7eb; --muted:#94a3b8; --accent:#2563eb; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family: Inter, Arial, sans-serif; background:linear-gradient(180deg,#0b1220,#111827); color:var(--ink); }
+    .wrap { max-width:1400px; margin:0 auto; padding:32px 20px 48px; }
+    h1 { margin:0 0 8px; font-size:32px; }
+    .sub { color:var(--muted); margin:0 0 28px; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:20px; }
+    .card { background:rgba(17,24,39,.92); border:1px solid rgba(148,163,184,.18); border-radius:18px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,.28); }
+    .media { background:#0b1020; padding:14px; }
+    .media img { width:100%; height:auto; display:block; border-radius:12px; }
+    .meta { padding:16px 16px 18px; }
+    .eyebrow { color:#93c5fd; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; margin-bottom:8px; }
+    .title { font-size:18px; font-weight:700; margin-bottom:10px; }
+    .caption { white-space:pre-wrap; line-height:1.45; color:#dbe4ee; font-size:14px; }
+  </style>
 </head>
 <body>
-    <h1>Meta Ad Run</h1>
+  <div class="wrap">
+    <h1>Meta Ad Run — 5 Concept Test</h1>
+    <p class="sub">Fresh 5-concept validation batch for Futures Funding review.</p>
     <div class="grid">
-        <div class="card">
-            <img src="concept-01-bait-and-switch.png" alt="concept-01">
-            <p id="caption-01">Loading...</p>
+      <article class="card">
+        <div class="media"><img src="2026-03-22-concept-01-v3.png" alt="Concept 01"></div>
+        <div class="meta">
+          <div class="eyebrow">Concept 01</div>
+          <div class="title">First Deal, Real Capital</div>
+          <div class="caption" id="caption-01">Loading…</div>
         </div>
-        <div class="card">
-            <img src="concept-02-fast-draws.png" alt="concept-02">
-            <p id="caption-02">Loading...</p>
+      </article>
+      <article class="card">
+        <div class="media"><img src="2026-03-22-concept-02-v3.png" alt="Concept 02"></div>
+        <div class="meta">
+          <div class="eyebrow">Concept 02</div>
+          <div class="title">Stop Leaving Rehab Budget in the Deal</div>
+          <div class="caption" id="caption-02">Loading…</div>
         </div>
-        <div class="card">
-            <img src="concept-03-ghosted-chat.png" alt="concept-03">
-            <p id="caption-03">Loading...</p>
+      </article>
+      <article class="card">
+        <div class="media"><img src="2026-03-22-concept-03-v3.png" alt="Concept 03"></div>
+        <div class="meta">
+          <div class="eyebrow">Concept 03</div>
+          <div class="title">When the Deal Needs to Close Fast</div>
+          <div class="caption" id="caption-03">Loading…</div>
         </div>
-        <div class="card">
-            <img src="concept-04-local-blueprint.png" alt="concept-04">
-            <p id="caption-04">Loading...</p>
+      </article>
+      <article class="card">
+        <div class="media"><img src="2026-03-22-concept-04-v3.png" alt="Concept 04"></div>
+        <div class="meta">
+          <div class="eyebrow">Concept 04</div>
+          <div class="title">Capital That Understands the Exit</div>
+          <div class="caption" id="caption-04">Loading…</div>
         </div>
-        <div class="card">
-            <img src="concept-05-junk-fee-jenga.png" alt="concept-05">
-            <p id="caption-05">Loading...</p>
+      </article>
+      <article class="card">
+        <div class="media"><img src="2026-03-22-concept-05-v3.png" alt="Concept 05"></div>
+        <div class="meta">
+          <div class="eyebrow">Concept 05</div>
+          <div class="title">Credibility Without the Runaround</div>
+          <div class="caption" id="caption-05">Loading…</div>
         </div>
-        <div class="card">
-            <img src="concept-06-tech-bro-vs-partner.png" alt="concept-06">
-            <p id="caption-06">Loading...</p>
-        </div>
-        <div class="card">
-            <img src="concept-07-marathon-not-sprint.png" alt="concept-07">
-            <p id="caption-07">Loading...</p>
-        </div>
-        <div class="card">
-            <img src="concept-08-shredder.png" alt="concept-08">
-            <p id="caption-08">Loading...</p>
-        </div>
-        <div class="card">
-            <img src="concept-09-rolodex-of-reality.png" alt="concept-09">
-            <p id="caption-09">Loading...</p>
-        </div>
-        <div class="card">
-            <img src="concept-10-tailored-suit.png" alt="concept-10">
-            <p id="caption-10">Loading...</p>
-        </div>
-        <div class="card">
-            <img src="2026-03-21-concept-1.png" alt="concept-11">
-            <p id="caption-11">Loading...</p>
-        </div>
-        <div class="card">
-            <img src="2026-03-21-concept-3.png" alt="concept-12">
-            <p id="caption-12">Loading...</p>
-        </div>
-        <div class="card">
-            <img src="2026-03-21-concept-5.png" alt="concept-13">
-            <p id="caption-13">Loading...</p>
-        </div>
+      </article>
     </div>
-
-    <script>
-        const captions = {
-            "caption-01": "concept-01-bait-and-switch.txt",
-            "caption-02": "concept-02-fast-draws.txt",
-            "caption-03": "concept-03-ghosted-chat.txt",
-            "caption-04": "concept-04-local-blueprint.txt",
-            "caption-05": "concept-05-junk-fee-jenga.txt",
-            "caption-06": "concept-06-tech-bro-vs-partner.txt",
-            "caption-07": "concept-07-marathon-not-sprint.txt",
-            "caption-08": "concept-08-shredder.txt",
-            "caption-09": "concept-09-rolodex-of-reality.txt",
-            "caption-10": "concept-10-tailored-suit.txt",
-            "caption-11": "2026-03-21-concept-1-caption.txt",
-            "caption-12": "2026-03-21-concept-3-caption.txt",
-            "caption-13": "2026-03-21-concept-5-caption.txt"
-        };
-
-        async function loadCaptions() {
-            for (const [id, url] of Object.entries(captions)) {
-                try {
-                    const response = await fetch(url);
-                    const text = await response.text();
-                    document.getElementById(id).innerText = text;
-                } catch (e) {
-                    console.error("Failed to load " + url, e);
-                }
-            }
+  </div>
+  <script>
+    const captions = {
+      "caption-01": "2026-03-22-concept-01-v3.txt",
+      "caption-02": "2026-03-22-concept-02-v3.txt",
+      "caption-03": "2026-03-22-concept-03-v3.txt",
+      "caption-04": "2026-03-22-concept-04-v3.txt",
+      "caption-05": "2026-03-22-concept-05-v3.txt"
+    };
+    async function loadCaptions() {
+      for (const [id, url] of Object.entries(captions)) {
+        try {
+          const res = await fetch(url, { cache: 'no-store' });
+          const text = await res.text();
+          document.getElementById(id).innerText = text;
+        } catch (err) {
+          document.getElementById(id).innerText = 'Failed to load caption.';
         }
-        loadCaptions();
-    </script>
+      }
+    }
+    loadCaptions();
+  </script>
 </body>
 </html>
